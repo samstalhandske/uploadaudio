@@ -13,7 +13,7 @@ form.addEventListener('submit', (e) => {
     formData.append('files[]', file)
   }
 
-  fetch(url, {
+  fetch('/process.php', {
     method: 'POST',
     body: formData,
   }).then((response) => {
